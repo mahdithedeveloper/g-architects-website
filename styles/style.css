@@ -85,7 +85,7 @@ main{
     align-items: center;
 }
 .teams-img-container{
-
+    
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.4rem;
@@ -135,11 +135,13 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
         
     }
-
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
 }
 
 /* medium devices */
@@ -147,7 +149,7 @@ main{
     header{
         padding: 40px;
     }
-    nav{
+    nav , .teams-container {
         flex-direction: column;
         
     }
