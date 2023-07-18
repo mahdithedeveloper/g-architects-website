@@ -1,7 +1,155 @@
  /*work sans font */ 
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Work+Sans:wght@400;500;600;700&display=swap');
-  
+ 
+  /* shared styles */
+
   *{
     font-family: 'Work Sans', sans-serif;
+}
+.btn-primary{
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.25rem;
+    border: 0;
+    font-weight: 600;
+}
 
-  }
+/* header styles */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+    
+}
+.nav-title{
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 700;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner style */
+.banner{
+    justify-content: center;
+}
+.banner-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-title{
+    color: #131313;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: 1rem;
+    color: #727272;
+    font-weight: 400;
+}
+.banner img{
+margin-top: 30px;
+    width: 100%;
+}
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 70px auto  ;
+    
+}
+.teams-container{
+    display: flex;
+    
+    align-items: center;
+}
+.teams-img-container{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.4rem;
+
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.quick-list{
+    color: var(--dark-03, #727272);
+    
+    font-size: 2.5rem;
+   
+    font-weight: 500;
+}
+.of-our{
+    color: var(--dark-01, #131313);
+    
+    font-size: 2.5rem;
+    
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+ 
+    font-size: 2.5rem;
+    
+    font-weight: 700;
+    
+}
+.teams-description{
+    color: var(--dark-03, #727272);
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+}
+
+
+
+/* responsive styles*/
+/* small devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        
+    }
+
+}
+
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 40px;
+    }
+    nav{
+        flex-direction: column;
+        
+    }
+
+}
